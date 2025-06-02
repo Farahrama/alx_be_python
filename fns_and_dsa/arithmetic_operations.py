@@ -10,6 +10,8 @@ def perform_operation(num1, num2, operation):
         case "divide":
             if num2 == 0:
                 return "Cannot divide by zero"
+            elif math.isinf(num1) or math.isinf(num2):
+                return "Cannot perform operation with infinity"
             return num1 / num2
         case _:
             return "Unknown operation"
