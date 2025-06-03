@@ -24,3 +24,6 @@ if input_unit == 'C':
 elif input_unit == 'F':
     converted_temperature = convert_to_celsius(input_temperature)
     print(f"{input_temperature}°F is {converted_temperature}°C")
+else:
+    print("Invalid temperature. Please enter a numeric value.")
+# This code snippet demonstrates how to convert temperatures between Celsius and Fahrenheit.
