@@ -1,5 +1,5 @@
 
-shopping_list = []
+shopping_list = input()
 def add_item(item):
     """Add an item to the shopping list."""
     shopping_list.append(item)
@@ -26,13 +26,17 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            # Prompt for and add an item
-            pass
+            item = input("Enter item to add: ")
+            add_item(item)
         elif choice == '2':
-            # Prompt for and remove an item
-            pass
+            input("Enter item to remove: ")
+            item = input("Enter item to remove: ")
+            remove_item(item)
         elif choice == '3':
-            # Display the shopping list
+            item = input("Enter to view: ")
+            print("Current Shopping List:")
+            for item in shopping_list:
+                print(f"- {item}")
             pass
         elif choice == '4':
             print("Goodbye!")
