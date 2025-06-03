@@ -1,4 +1,5 @@
-import datetime
+from datetime import datetime
+# and to calculate a future date based on user input.
 def display_current_datetime():
     """Display the current date and time."""
     current_datetime = datetime.datetime.now()
