@@ -9,4 +9,4 @@ def safe_divide(numerator, denominator):
             raise ZeroDivisionError("Error: Cannot divide by zero.")
     except ValueError:
         if not isinstance(numerator, (int, float)) or not isinstance(denominator, (int, float)):
-            raise ValueError("Please enter numeric values only.")
+            raise ValueError("Error: Please enter numeric values only.")
