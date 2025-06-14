@@ -12,7 +12,6 @@ class Book:
 class Library(Book):
     def __init__(self):
         self.__books = []
-        self.add_book = []
     def add_book(self, book):
         """Add a book to the library."""
         self.__books.append(book)
