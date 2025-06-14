@@ -2,8 +2,8 @@ import unittest
 from simple_calculator import SimpleCalculator
 class Testsimplecalculator(unittest.TestCase):
     """Test cases for the SimpleCalculator class."""
-    def test_add(self):
-        """Test addittion 1, 2"""
+    def test_addition(self):
+        """Test addition 1, 2"""
         self.assertEqual(SimpleCalculator().add(1, 2), 3)
     def test_multiply(self):
         """Test multiply method"""
