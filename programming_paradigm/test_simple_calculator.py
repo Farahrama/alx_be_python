@@ -1,6 +1,5 @@
 import unittest
-simple_calculator =__import__('SimpleCalculator').SimpleCalculator
-                              
+from simple_calculator import simple_calculator
 class Testsimplecalculator(unittest.TestCase):
     """Test cases for the SimpleCalculator class."""
     def test_add(self):
@@ -16,4 +15,3 @@ class Testsimplecalculator(unittest.TestCase):
         """Test divide method"""
         self.assertEqual(simple_calculator().divide(6, 2), 3)
         self.assertIsNone(simple_calculator().divide(6, 0))
-        
