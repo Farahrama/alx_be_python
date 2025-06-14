@@ -9,7 +9,7 @@ class Book:
             if book.title == title and book.is_checked_out:
                 book.is_checked_out = False
 
-class Library():
+class Library:
     def __init__(self):
         self.__books = []
     def add_book(self, book):
