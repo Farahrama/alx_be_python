@@ -3,7 +3,7 @@ class Book:
         self.title = title
         self.author = author
         self.is_checked_out = False
-    def return_book(self, title):
+    def return_book(self):
         """Return a book by title."""
         for book in self.__books:
             if book.title == title and book.is_checked_out:
